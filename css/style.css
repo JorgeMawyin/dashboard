@@ -11,6 +11,8 @@
 
 .letra{
     font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 30px;
 }
 
 #headernav {
