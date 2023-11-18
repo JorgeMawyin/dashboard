@@ -1,0 +1,273 @@
+h1{
+    background-color: hwb(226 22% 27%);
+    color: #fdfdfd;
+    z-index: 100%;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#titulo4{
+    font-size: 1.8rem;
+}
+
+h1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+
+}
+
+canvas{
+    height: 15rem !important;
+    max-height: 15rem;
+    padding: 1rem;
+}
+
+canvas#plot2{
+    border-left: solid 3px #544f57;
+}
+
+button{
+    background-color: #544f57 !important;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #544f57 !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Opcional, para distribuir los elementos uniformemente */
+    --mdb-navbar-hover-color: rgba(87, 163, 207, 0.7)!important;
+}
+
+.main-content {
+    margin-top: 80px; /* Ajusta la altura según tu barra de navegación */
+}
+
+a.nav-link{
+    display: flex;
+    color: #ffffff;
+    font-size: 1.3rem;
+    justify-content: center;
+    
+}
+
+button.navbar-toggler.collapsed{
+    color: #ffffff;
+}
+
+li.nav-item{
+    flex-basis: 20% !important;
+}
+
+h4{
+    display: inline-flex;
+    font-size: 2rem;
+    border-bottom: dotted 5px #544f57;
+}
+
+h6{
+    font-size: 1rem;
+    margin-left: 8rem;
+}
+
+nav a {
+    width: 100%;
+    padding: 10px; /* Ajusta el relleno según tus necesidades */
+    margin: 0;
+    display: block; /* Esto hará que cada enlace sea un bloque completo */
+}
+
+section{
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+div.container{
+    padding-bottom: 2rem;
+}
+
+#indicadores{
+    margin-top: 3rem;
+}
+
+#precipitacion{
+    background-color: #007bff;
+}
+
+#uv{
+    background-color: rgb(243, 198, 0);
+}
+
+#temperatura{
+    background-color: #007bff;
+}
+
+.list-group-light>.list-group-item{
+    padding: 1rem;    
+}
+
+#datos-section{
+    border: 0px;
+}
+
+
+.btn.btn-primary{
+    padding: 0.8rem;
+}
+
+table.default tr:not(:nth-child(1)):not(:nth-child(2)) {
+    display: none;
+}
+
+div#monitoreo img{
+    padding: 1rem;
+}
+
+div#monitoreo th{
+    background-color: #a1cfd6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las celdas del encabezado */
+th {
+  background-color: #20295c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para las celdas del cuerpo */
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Estilo para las filas impares del cuerpo */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para la imagen dentro de la tabla */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para hacer la tabla responsiva */
+@media (max-width: 600px) {
+  td,
+  th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+#datos-section #forecast {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo para las celdas del encabezado */
+#datos-section #forecast th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo para las celdas del cuerpo */
+#datos-section #forecast td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Estilo para las filas impares del cuerpo */
+#datos-section #forecast tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el botón "Actualizar Datos" */
+#datos-section #botonActualizar {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#datos-section #botonActualizar:hover {
+    background-color: #218838;
+}
+
+#monitoreo table tr:first-child {
+    background-color: #20295C; /* Nuevo color de fondo para la primera fila */
+}
+
+#monitoreo tr:first-child td {
+    background-color: #007bff;
+    text-align: center;
+    color: #ffffff; /* Color del texto en las celdas de la primera fila */
+}
+
+.cargando-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 61, 63, 0.7);/* Fondo semitransparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ajusta el valor según sea necesario, debe ser mayor que otros z-index en la página */
+}
+
+/* Estilo para el spinner de carga */
+.cargando-spinner {
+    border: 8px solid #f3f3f3; /* Gris claro */
+    border-top: 8px solid #3498db; /* Azul */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+img{
+    width: 75px;
+    height: 75px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h5{
+    margin-bottom: 1rem !important;
+}
+
+footer{
+    background-color: #20295C !important;
+}
+
+footer span{
+    color: #ffffff;
+}
